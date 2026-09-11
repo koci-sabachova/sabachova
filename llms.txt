@@ -1,0 +1,18 @@
+# Kateřina Kočí Šabachová
+
+> Webová designerka. Dělá jednoduché, hezké weby a appky, co běží samy — bez měsíčních poplatků a bez závislosti na cizí platformě.
+
+Weby dnes nemusí stát tisíce až desetitisíce ročně na poplatcích za službu, přes kterou běží. Kateřina staví statické weby a interní appky na míru — jako náhradu za drahé předplacené služby nebo neohrabané Google Tabulky.
+
+Kód nepíše ručně — vibecoduje. Výsledek ale vypadá a funguje přesně tak, jak klient potřebuje.
+
+## Kontakt
+
+- E-mail: koci.sabachova@gmail.com
+- LinkedIn: https://www.linkedin.com/in/sabachova
+
+## Ukázky práce
+
+- [13 řemesel](https://trinactremesel.cz/): Statický web pro kurzy venkovských řemesel Ondřeje Pelikána. GitHub Pages, platby přes Stripe Payment Links.
+- [Ondřej Pelikán](https://ondrapelikan.cz/): Portfolio web umělce — fotografie, objekty, poezie, zvuk a performance.
+- Cobra kuchařka: Interní PWA kuchařka pro Cobra Bar, nasazená na Cloudflare Pages.

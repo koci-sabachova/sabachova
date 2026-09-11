@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kateřina Kočí Šabachová — alternativní design</title>
+<link rel="icon" href="kac_emoji.png" type="image/png">
+<link rel="stylesheet" href="style-alt.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-panel">
+    <p class="eyebrow">HOW CAN I HELP YOU?</p>
+    <h1>Kateřina<br>Kočí<br>Šabachová</h1>
+    <nav class="navlinks">
+      <a href="#o-mne">o mně</a>
+      <a href="#prace">práce</a>
+      <a href="#kontakt">kontakt</a>
+    </nav>
+  </div>
+  <div class="hero-face">
+    <div class="emoji-field" aria-hidden="true"></div>
+  </div>
+</header>
+
+<main>
+  <section id="o-mne" class="section">
+    <h2><span class="num">01</span> O mně</h2>
+    <div class="section-body">
+      <p>
+        Chci být Robin Hood webových prezentací a malých automatizací. Baví mě představa, že se lidé můžou v klidu věnovat svým řemeslům, mít webovou prezentaci a neplatit vysoké částky za jejich spuštění a provoz.
+      </p>
+      <p>
+        Na rovinu: kód nepíšu ručně, vibecoduju. Výsledek ale vypadá
+        a funguje přesně tak, jak potřebuješ.
+      </p>
+      <p>
+        Protože mám zároveň vhled do marketingu, hlídám i SEO a přístupnost. Potřebujeme aby byl web dobře vidět pro vyhledávače. A ať tě nenajde jen Google, ale i ChatGPT a spol. — dnes už nechceš unikat hledáčku AI.
+      </p>
+    </div>
+  </section>
+
+  <section id="prace" class="section">
+    <h2><span class="num">02</span> Co jsem stavěla</h2>
+    <p class="rows-label">Weby</p>
+    <div class="rows">
+      <a class="row" href="https://trinactremesel.cz" target="_blank" rel="noopener">
+        <span class="row-index"><img src="fav-13remesel.png" class="row-icon" alt="" width="28" height="28" style="border-radius:50%"></span>
+        <span class="row-title">13 řemesel</span>
+        <span class="row-desc">Ondřej si uměl udělat web sám, přes Wix. Stálo ho to spoustu času, peněz a kompromisů. Převedla jsem jeho práci do kódu, za který nemusí každý měsíc platit a navrch se postarala o správnou viditelnost.</span>
+        <span class="row-tech"><span>vanilla HTML/CSS/JS</span><span>vlastní SSG v Node.js</span><span>Stripe Payment Links</span></span>
+        <span class="row-link">trinactremesel.cz ↗</span>
+      </a>
+      <a class="row" href="https://ondrapelikan.cz" target="_blank" rel="noopener">
+        <span class="row-index"><img src="fav-ondrapelikan.png" class="row-icon" alt="" width="34" height="34"></span>
+        <span class="row-title">Ondřej Pelikán</span>
+        <span class="row-desc">Portfolio umělce — fotografie, objekty, poezie, zvuk a performance.</span>
+        <span class="row-tech"><span>vanilla HTML/CSS/JS</span><span>vlastní SSG v Node.js</span><span>achromatická paleta</span></span>
+        <span class="row-link">ondrapelikan.cz ↗</span>
+      </a>
+    </div>
+
+    <p class="rows-label">Appky</p>
+    <p class="section-lead" style="color:var(--blue)">Miluješ Google Tabulky? To každý. Ale mít vlastní appku, která vypadá a funguje přesně podle tebe, je ještě lepší.</p>
+    <div class="rows">
+      <div class="row row-static">
+        <span class="row-index"><img src="fav-kucharka.png" class="row-icon" alt="" width="28" height="28" style="border-radius:50%"><img src="fav-pritomnost.png" class="row-icon" alt="" width="28" height="28" style="border-radius:50%"></span>
+        <span class="row-title">Koktejlové kuchařky</span>
+        <span class="row-desc">Appka pro Cobra Bar a sesterská appka pro kino Přítomnost. Tmavé rozhraní pro příjemné čtení v setmělém podniku, dynamické vyhledávání, třídění na kategorie. Vše se aktualizuje samo z té původní tabulky.</span>
+        <span class="row-tech"><span>PWA</span><span>vanilla HTML/CSS/JS</span><span>service worker</span><span>Cloudflare Pages</span></span>
+        <span class="row-link row-link-muted">interní projekt</span>
+      </div>
+      <div class="row row-static">
+        <span class="row-index"><img src="fav-timetamer.png" class="row-icon" alt="" width="34" height="34"></span>
+        <span class="row-title">Time Tamer</span>
+        <span class="row-desc">Osobní appka na počítání odpracovaných hodin. Funguje na počítači i na telefonu souběžně, exportuje výkaz práce pro klienta, stíhá všechny moje chaotické potřeby.</span>
+        <span class="row-tech"><span>Cloudflare Workers</span><span>D1</span><span>Hono</span></span>
+        <span class="row-link row-link-muted">interní projekt</span>
+      </div>
+      <div class="row row-static">
+        <span class="row-index"><img src="fav-djbot.png" class="row-icon" alt="" width="28" height="28" style="border-radius:50%"></span>
+        <span class="row-title">Cobra DJ Bot</span>
+        <span class="row-desc">Už se mi nechtělo pravidelně připravovat do Slacku drafty podle dat z tabulky. Teď se zprávy samy píšou a samy odesílají.</span>
+        <span class="row-tech"><span>Python</span><span>Google Sheets API</span><span>Slack API</span><span>GitHub Actions</span></span>
+        <span class="row-link row-link-muted">interní projekt</span>
+      </div>
+      <div class="row row-static">
+        <span class="row-index">04</span>
+        <span class="row-title">Výplatnice</span>
+        <span class="row-desc">Opravdu jsem dřív každý měsíc ručně dělala výplatnice jako screenshoty z Google Sheets. Teď je script vygeneruje a rozešle sám, a navíc jsou přehledné a hezké.</span>
+        <span class="row-tech"><span>Node.js</span><span>ExcelJS</span><span>Puppeteer → PDF</span><span>Slack API</span></span>
+        <span class="row-link row-link-muted">interní projekt</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="section">
+    <h2><span class="num">03</span> Ozvi se</h2>
+    <div class="contact-block">
+      <a class="contact-big" href="mailto:koci.sabachova@gmail.com">koci.sabachova@gmail.com</a>
+      <a class="contact-big" href="https://www.linkedin.com/in/sabachova" target="_blank" rel="noopener">linkedin.com/in/sabachova</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">Stránku postavila <a href="https://www.linkedin.com/in/sabachova" target="_blank" rel="noopener">Kateřina Kočí Šabachová</a> · © 2026</footer>
+
+<div id="confetti-layer" aria-hidden="true"></div>
+<script src="script.js"></script>
+</body>
+</html>
