@@ -50,4 +50,4 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://sabachova.com/sitemap.xml
+Sitemap: https://sabachova.cz/sitemap.xml

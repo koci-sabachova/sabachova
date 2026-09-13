@@ -1,4 +1,4 @@
-# sabachova.com — osobní web Kateřiny Kočí Šabachové
+# sabachova.cz — osobní web Kateřiny Kočí Šabachové
 
 ## Soubory
 - `index.html` + `style.css` + `script.js` — hlavní design (blob hero)

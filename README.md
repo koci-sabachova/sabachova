@@ -1,4 +1,4 @@
-# sabachova.com
+# sabachova.cz
 
 Osobní stránka Kateřiny Kočí Šabachové. Statický web, žádný build systém —
 čisté HTML/CSS/vanilla JS, hostováno na GitHub Pages.
@@ -14,5 +14,5 @@ a otevřít http://localhost:8000
 ## Deploy
 
 Push do `main` → GitHub Pages nasadí automaticky (Settings → Pages →
-Source: Deploy from branch `main`). Doména `sabachova.com` je nastavená
+Source: Deploy from branch `main`). Doména `sabachova.cz` je nastavená
 přes `CNAME` soubor + DNS záznamy u registrátora.
