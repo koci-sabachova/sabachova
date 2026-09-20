@@ -18,6 +18,7 @@
       <a href="#prace">práce</a>
       <a href="#kontakt">kontakt</a>
     </nav>
+    <img src="kac_emoji.png" alt="" class="hero-mobile-avatar" width="72" height="72">
   </div>
   <div class="hero-face">
     <div class="emoji-field" aria-hidden="true"></div>
@@ -26,7 +27,7 @@
 
 <main>
   <section id="o-mne" class="section">
-    <h2><span class="num">01</span> O mně</h2>
+    <h2><span class="num">01</span> Co dělám</h2>
     <div class="section-body">
       <p>
         Chci dělat weby dostupné i lidem, kteří mají co nabídnout, ale nemají rozpočet na digitální cirkus.
@@ -42,7 +43,7 @@
   </section>
 
   <section id="prace" class="section">
-    <h2><span class="num">02</span> Co jsem stavěla</h2>
+    <h2><span class="num">02</span> Ukázky práce</h2>
     <p class="rows-label">Weby</p>
     <div class="rows">
       <a class="row" href="https://trinactremesel.cz" target="_blank" rel="noopener">
@@ -67,7 +68,7 @@
       <div class="row row-static">
         <span class="row-index"><img src="fav-kucharka.png" class="row-icon" alt="" width="28" height="28" style="border-radius:50%"><img src="fav-pritomnost.png" class="row-icon" alt="" width="28" height="28" style="border-radius:50%"></span>
         <span class="row-title">Koktejlové kuchařky</span>
-        <span class="row-desc">Appka pro Cobra Bar a sesterská appka pro kino Přítomnost. Tmavé rozhraní pro příjemné čtení v setmělém podniku, dynamické vyhledávání, třídění na kategorie. Vše se aktualizuje samo z té původní tabulky.</span>
+        <span class="row-desc">Appka pro Cobra Bar a sesterská appka pro kino Přítomnost. Tmavé rozhraní pro příjemné čtení v setmělém podniku, dynamické vyhledávání, třídění na kategorie. Vše se aktualizuje samo z té původní tabulky, ze které to dřív četli i barmani při práci.</span>
         <span class="row-tech"><span>PWA</span><span>vanilla HTML/CSS/JS</span><span>service worker</span><span>Cloudflare Pages</span></span>
         <span class="row-link row-link-muted">interní projekt</span>
       </div>
@@ -81,14 +82,21 @@
       <div class="row row-static">
         <span class="row-index"><img src="fav-djbot.png" class="row-icon" alt="" width="28" height="28" style="border-radius:50%"></span>
         <span class="row-title">Cobra DJ Bot</span>
-        <span class="row-desc">Už se mi nechtělo pravidelně připravovat do Slacku drafty podle dat z tabulky. Teď se zprávy samy píšou a samy odesílají.</span>
+        <span class="row-desc">Už se mi nechtělo pravidelně připravovat drafty do Slacku podle google sheetu. Teď se zprávy ve správný čas samy píšou a samy odesílají.</span>
         <span class="row-tech"><span>Python</span><span>Google Sheets API</span><span>Slack API</span><span>GitHub Actions</span></span>
         <span class="row-link row-link-muted">interní projekt</span>
       </div>
       <div class="row row-static">
-        <span class="row-index">04</span>
+        <span class="row-index"><img src="fav-formanka.png" class="row-icon" alt="" width="28" height="28" style="border-radius:50%"></span>
+        <span class="row-title">Formanka Checklist</span>
+        <span class="row-desc">Elektronický checklist pro otevírání, provoz a zavírání baru. Barman se přihlásí svým PINem, odškrtává položky, u každé se uloží čas a jméno. Na konci směny appka pošle přehled dne do Slacku. Ušetříme papír a čas provozních, kteří checklisty tiskli.</span>
+        <span class="row-tech"><span>Cloudflare Workers</span><span>D1</span><span>vanilla JS</span></span>
+        <span class="row-link row-link-muted">interní projekt</span>
+      </div>
+      <div class="row row-static">
+        <span class="row-index">05</span>
         <span class="row-title">Výplatnice</span>
-        <span class="row-desc">Opravdu jsem dřív každý měsíc ručně dělala výplatnice jako screenshoty z Google Sheets. Teď je script vygeneruje a rozešle sám, a navíc jsou přehledné a hezké.</span>
+        <span class="row-desc">Opravdu jsem dřív každý měsíc ručně dělala výplatnice jako screenshoty z Google Sheets. Teď je script vygeneruje a rozešle sám a navíc jsou přehledné a hezké, optimalizované pro čtení na telefonu.</span>
         <span class="row-tech"><span>Node.js</span><span>ExcelJS</span><span>Puppeteer → PDF</span><span>Slack API</span></span>
         <span class="row-link row-link-muted">interní projekt</span>
       </div>

@@ -71,8 +71,17 @@ a { color: inherit; }
   border-right: 4px solid var(--ink);
 }
 
+.hero-mobile-avatar { display: none; }
+
 @media (max-width: 760px) {
   .hero-panel { border-right: none; border-bottom: 4px solid var(--ink); }
+  .hero-mobile-avatar {
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    align-self: flex-end;
+  }
 }
 
 .eyebrow {
