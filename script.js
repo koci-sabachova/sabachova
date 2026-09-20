@@ -127,4 +127,10 @@
   lbPrev.addEventListener('click', e => { e.stopPropagation(); lbShow(lbIndex - 1); });
   lbNext.addEventListener('click', e => { e.stopPropagation(); lbShow(lbIndex + 1); });
   lb.addEventListener('click', e => { if (e.target === lb) lbClose(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'ArrowRight' && lbIndex < lbImages.length - 1) lbShow(lbIndex + 1);
+    if (e.key === 'ArrowLeft' && lbIndex > 0) lbShow(lbIndex - 1);
+    if (e.key === 'Escape') lbClose();
+  });
 })();
