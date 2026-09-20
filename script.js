@@ -89,4 +89,41 @@
   }
 
   fixTypo();
+
+  const lb = document.getElementById('lightbox');
+  const lbImg = lb.querySelector('.lightbox-img');
+  const lbCaption = lb.querySelector('.lightbox-caption');
+  const lbPrev = lb.querySelector('.lightbox-prev');
+  const lbNext = lb.querySelector('.lightbox-next');
+  let lbImages = [], lbIndex = 0;
+
+  const captions = { 0: 'vstup', 1: 'výstup' };
+
+  function lbShow(i) {
+    lbIndex = i;
+    lbImg.src = lbImages[i];
+    const hasMultiple = lbImages.length > 1;
+    lbPrev.style.display = hasMultiple && i > 0 ? '' : 'none';
+    lbNext.style.display = hasMultiple && i < lbImages.length - 1 ? '' : 'none';
+    lbCaption.textContent = hasMultiple ? (captions[i] || '') : '';
+  }
+
+  function lbClose() {
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
+    lbImg.src = '';
+  }
+
+  document.querySelectorAll('.preview-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      lbImages = btn.dataset.preview.split(',');
+      lb.classList.add('open');
+      lb.setAttribute('aria-hidden', 'false');
+      lbShow(0);
+    });
+  });
+  lb.querySelector('.lightbox-close').addEventListener('click', lbClose);
+  lbPrev.addEventListener('click', e => { e.stopPropagation(); lbShow(lbIndex - 1); });
+  lbNext.addEventListener('click', e => { e.stopPropagation(); lbShow(lbIndex + 1); });
+  lb.addEventListener('click', e => { if (e.target === lb) lbClose(); });
 })();

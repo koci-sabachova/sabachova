@@ -70,7 +70,7 @@
         <span class="row-title">Koktejlové kuchařky</span>
         <span class="row-desc">Appka pro Cobra Bar a sesterská appka pro kino Přítomnost. Tmavé rozhraní pro příjemné čtení v setmělém podniku, dynamické vyhledávání, třídění na kategorie. Vše se aktualizuje samo z té původní tabulky, ze které to dřív četli i barmani při práci.</span>
         <span class="row-tech"><span>PWA</span><span>vanilla HTML/CSS/JS</span><span>service worker</span><span>Cloudflare Pages</span></span>
-        <span class="row-link row-link-muted">interní projekt</span>
+        <span class="row-link"><button class="preview-btn" data-preview="preview-kucharka.png">náhled ↗</button></span>
       </div>
       <div class="row row-static">
         <span class="row-index"><img src="fav-timetamer.png" class="row-icon" alt="" width="34" height="34"></span>
@@ -84,14 +84,14 @@
         <span class="row-title">Cobra DJ Bot</span>
         <span class="row-desc">Už se mi nechtělo pravidelně připravovat drafty do Slacku podle google sheetu. Teď se zprávy ve správný čas samy píšou a samy odesílají.</span>
         <span class="row-tech"><span>Python</span><span>Google Sheets API</span><span>Slack API</span><span>GitHub Actions</span></span>
-        <span class="row-link row-link-muted">interní projekt</span>
+        <span class="row-link"><button class="preview-btn" data-preview="preview-djbot.png,preview-djbot-slack.png">náhled ↗</button></span>
       </div>
       <div class="row row-static">
         <span class="row-index"><img src="fav-formanka.png" class="row-icon" alt="" width="28" height="28" style="border-radius:50%"></span>
         <span class="row-title">Formanka Checklist</span>
         <span class="row-desc">Elektronický checklist pro otevírání, provoz a zavírání baru. Barman se přihlásí svým PINem, odškrtává položky, u každé se uloží čas a jméno. Na konci směny appka pošle přehled dne do Slacku. Ušetříme papír a čas provozních, kteří checklisty tiskli.</span>
         <span class="row-tech"><span>Cloudflare Workers</span><span>D1</span><span>vanilla JS</span></span>
-        <span class="row-link row-link-muted">interní projekt</span>
+        <span class="row-link"><button class="preview-btn" data-preview="preview-formanka.png">náhled ↗</button></span>
       </div>
       <div class="row row-static">
         <span class="row-index">05</span>
@@ -119,6 +119,15 @@
 <footer class="site-footer">Vibecoded by <a href="https://www.linkedin.com/in/sabachova" target="_blank" rel="noopener">Kateřina Kočí Šabachová</a> · © 2026</footer>
 
 <div id="confetti-layer" aria-hidden="true"></div>
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Zavřít">✕</button>
+  <button class="lightbox-prev" aria-label="Předchozí">‹</button>
+  <div class="lightbox-inner">
+    <img class="lightbox-img" src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+  <button class="lightbox-next" aria-label="Další">›</button>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
