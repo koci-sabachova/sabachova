@@ -318,11 +318,11 @@ a { color: inherit; }
   font-size: .75rem;
   font-weight: 700;
   font-family: ui-monospace, "SF Mono", monospace;
-  background: var(--paper);
-  border: 1.5px solid var(--ink);
+  background: var(--blue);
+  border: 1.5px solid var(--blue);
   border-radius: 999px;
   padding: 2px 10px;
-  color: var(--ink);
+  color: var(--paper);
 }
 
 @media (max-width: 560px) {
@@ -331,6 +331,22 @@ a { color: inherit; }
 }
 
 /* ---------- contact ---------- */
+
+.contact-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.contact-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.contact-intro .section-lead { margin: 0; }
 
 .contact-block {
   display: flex;
