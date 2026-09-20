@@ -97,7 +97,7 @@
   const lbNext = lb.querySelector('.lightbox-next');
   let lbImages = [], lbIndex = 0;
 
-  const captions = { 0: 'vstup', 1: 'výstup' };
+  let lbCaptions = [];
 
   function lbShow(i) {
     lbIndex = i;
@@ -105,7 +105,7 @@
     const hasMultiple = lbImages.length > 1;
     lbPrev.style.display = hasMultiple && i > 0 ? '' : 'none';
     lbNext.style.display = hasMultiple && i < lbImages.length - 1 ? '' : 'none';
-    lbCaption.textContent = hasMultiple ? (captions[i] || '') : '';
+    lbCaption.textContent = lbCaptions[i] || '';
   }
 
   function lbClose() {
@@ -117,6 +117,7 @@
   document.querySelectorAll('.preview-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       lbImages = btn.dataset.preview.split(',');
+      lbCaptions = (btn.dataset.captions || '').split(',');
       lb.classList.add('open');
       lb.setAttribute('aria-hidden', 'false');
       lbShow(0);
