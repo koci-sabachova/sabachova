@@ -57,7 +57,54 @@
   }
 
   if (emojiField) {
-    const emojis = ["☀️","🍸","🫶🏻","👌🏻","🐱","🌳","🍄","🌿","🌱","🌹","🌸","🌻","✨","🍊","🥨","🍋","🍕","🍿","🏓","🚴🏻‍♀️","🚂","🚅","⛰️","📎","📚","📦","🪔","⏰","📷","💻","🚲","🪸","🦩","🐓","🐈‍⬛","🦆","👩🏻‍💻","🍦","🦷","🧶","🪡","🎒","🐝","🫛","🍳"];
+    const emojis = [
+      { e: "☀️", f: "sun" },
+      { e: "🍸", f: "cocktail_glass" },
+      { e: "🫶🏻", f: "heart_hands_light" },
+      { e: "👌🏻", f: "ok_hand_light" },
+      { e: "🐱", f: "cat_face" },
+      { e: "🌳", f: "deciduous_tree" },
+      { e: "🍄", f: "mushroom" },
+      { e: "🌿", f: "herb" },
+      { e: "🌱", f: "seedling" },
+      { e: "🌹", f: "rose" },
+      { e: "🌸", f: "cherry_blossom" },
+      { e: "🌻", f: "sunflower" },
+      { e: "✨", f: "sparkles" },
+      { e: "🍊", f: "tangerine" },
+      { e: "🥨", f: "pretzel" },
+      { e: "🍋", f: "lemon" },
+      { e: "🍕", f: "pizza" },
+      { e: "🍿", f: "popcorn" },
+      { e: "🏓", f: "ping_pong" },
+      { e: "🚴🏻‍♀️", f: "woman_biking_light" },
+      { e: "🚂", f: "locomotive" },
+      { e: "🚅", f: "bullet_train" },
+      { e: "⛰️", f: "mountain" },
+      { e: "📎", f: "paperclip" },
+      { e: "📚", f: "books" },
+      { e: "📦", f: "package" },
+      { e: "🪔", f: "diya_lamp" },
+      { e: "⏰", f: "alarm_clock" },
+      { e: "📷", f: "camera" },
+      { e: "💻", f: "laptop" },
+      { e: "🚲", f: "bicycle" },
+      { e: "🪸", f: "coral" },
+      { e: "🦩", f: "flamingo" },
+      { e: "🐓", f: "rooster" },
+      { e: "🐈‍⬛", f: "black_cat" },
+      { e: "🦆", f: "duck" },
+      { e: "👩🏻‍💻", f: "woman_technologist_light" },
+      { e: "🍦", f: "soft_ice_cream" },
+      { e: "🦷", f: "tooth" },
+      { e: "🧶", f: "yarn" },
+      { e: "🪡", f: "sewing_needle" },
+      { e: "🎒", f: "backpack" },
+      { e: "🐝", f: "honeybee" },
+      { e: "🫛", f: "pea_pod" },
+      { e: "🍳", f: "cooking" },
+    ];
+    const isWindows = /Windows/.test(navigator.userAgent);
     const pool = [...emojis, "__kac__", "__kac__"];
     for (let i = pool.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -70,9 +117,13 @@
     let html = "";
     for (let i = 0; i < count; i++) {
       const item = pool[i % pool.length];
-      html += item === "__kac__"
-        ? '<img src="kac_emoji.png" alt="" class="ef-kac">'
-        : "<span>" + item + "</span>";
+      if (item === "__kac__") {
+        html += '<img src="kac_emoji.png" alt="" class="ef-kac">';
+      } else if (isWindows) {
+        html += `<img src="fluent-emoji/${item.f}.png" alt="" class="ef-fluent">`;
+      } else {
+        html += "<span>" + item.e + "</span>";
+      }
     }
     emojiField.innerHTML = html;
   }
